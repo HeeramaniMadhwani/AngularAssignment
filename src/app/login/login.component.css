@@ -1,0 +1,56 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make it full viewport height */
+  background-color: #f0f0f0; /* Light background color */
+  font-family: sans-serif; /* Use a sans-serif font */
+}
+
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px; /* Adjust width as needed */
+}
+
+.login-box img {
+  width: 5px; 
+  height: 8px; 
+  object-fit: contain; 
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #007bff; /* Blue button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.login-box button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Style labels if you have them */
+.login-box label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}

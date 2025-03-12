@@ -1,0 +1,12 @@
+<div class="profile-container">
+  <div class="profile-box">
+<h2> Profile</h2>
+<div *ngIf="user">
+    <img [src]="user.image" alt="Profile Image" class="profile-image">
+    <h3>{{ user.firstName }} {{ user.lastName }}</h3>
+    <p> {{ user.username }}</p>
+    <p>Gender: {{ user.gender }}</p>
+    <p>{{ user.email }}</p>
+  </div>
+</div>
+</div>

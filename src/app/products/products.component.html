@@ -1,0 +1,36 @@
+
+<div class="products-container">
+    <h2>Product Table</h2>
+    <table class="products-table">
+      <thead>
+        <tr>
+          <th>Product Title</th>
+          <th>Product Description</th>
+          <th>Product Price</th>
+          <th>Product Discount</th>
+          <th>Product Rating</th>
+          <th>Product Stock</th>
+          <th>Product Brand</th>
+          <th>Product Category</th>
+          <th>Product Thumbnail</th>
+          <th>Edit</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr NgFor="let product of products">
+          <td>{{ product.title }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.discountPercentage }}</td>
+          <td>{{ product.rating }}</td>
+          <td>{{ product.stock }}</td>
+          <td>{{ product.brand }}</td>
+          <td>{{ product.category }}</td>
+          <td><img [src]="product.thumbnail" alt="Product Thumbnail" class="product-thumbnail"></td>
+          <td><button>Edit</button></td>
+          <td><button>Details</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
